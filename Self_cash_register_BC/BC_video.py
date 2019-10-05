@@ -63,7 +63,7 @@ def register_main():
         print("小計 =", prices)
 
         while True:
-            inp=input("続けるなら'C'キー、終了するなら'Q'キーを押してください。")
+            inp=input("続けるなら'C'キー、終了するなら'Q'キーを押してください。：")
             if inp in ['c','C','q','Q']:break #正しいキーが入力されるまで繰り返す
             print('正しいキーを入力してください')
 
