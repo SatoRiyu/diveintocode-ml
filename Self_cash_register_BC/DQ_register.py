@@ -5,6 +5,8 @@ from play_sound import SoundPlayer #階層に注意
 from time import sleep
 from pyzbar.pyzbar import decode
 from PIL import Image
+from PyQt5 import QtWidgets
+from UI import ui_prot0
 
 
 # 商品コードと商品名、金額
