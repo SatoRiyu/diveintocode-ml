@@ -197,7 +197,3 @@ if __name__ == '__main__':
       sleep(3)
 
   #sys.exit(app.exec_())
-
-
-
-

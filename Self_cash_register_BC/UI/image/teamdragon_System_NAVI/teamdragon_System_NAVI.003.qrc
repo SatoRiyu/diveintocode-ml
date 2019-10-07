@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="newPrefix">
+    <file>teamdragon_System_NAVI.003.jpeg</file>
+  </qresource>
+</RCC>

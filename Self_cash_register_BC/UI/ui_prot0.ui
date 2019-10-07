@@ -6,12 +6,15 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>676</width>
-    <height>581</height>
+    <width>1055</width>
+    <height>791</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background:url(:/newPrefix/image/teamdragon_System_NAVI/teamdragon_System_NAVI_003.jpeg)</string>
   </property>
   <widget class="QDialogButtonBox" name="buttonBox">
    <property name="geometry">
@@ -64,6 +67,9 @@
      <height>321</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background:rgb(255, 255, 255)</string>
+   </property>
    <column>
     <property name="text">
      <string>商品名</string>
@@ -83,6 +89,9 @@
      <width>371</width>
      <height>91</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:rgb(255, 255, 255)</string>
    </property>
    <row>
     <property name="text">
@@ -162,21 +171,23 @@ p, li { white-space: pre-wrap; }
     <string>N</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_setPix">
+  <widget class="QWidget" name="widget" native="true">
    <property name="geometry">
     <rect>
-     <x>400</x>
-     <y>80</y>
+     <x>440</x>
+     <y>100</y>
      <width>250</width>
      <height>250</height>
     </rect>
    </property>
-   <property name="text">
-    <string>TextLabel</string>
+   <property name="styleSheet">
+    <string notr="true">background:rgba(255, 255, 255, 0)</string>
    </property>
   </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="teamdragon_System_NAVI.qrc"/>
+ </resources>
  <connections>
   <connection>
    <sender>buttonBox</sender>
