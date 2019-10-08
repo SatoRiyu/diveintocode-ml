@@ -6,7 +6,8 @@ from PyQt5.QtGui import QPixmap
 from UI.start import Ui_MainWindow
 from UI.view1 import Ui_Form as view1
 from UI.read_result import Ui_read_result
-
+import product_registration
+from BC_video_copy import txt2dict
 import numpy as np
 import cv2
 from play_sound import SoundPlayer #階層に注意
@@ -14,11 +15,12 @@ from time import sleep
 from pyzbar.pyzbar import decode
 from PIL import Image
 
+
 # 商品コードと商品名、金額
-dict_name = {"1234ABXDGEAEDA56788": "a", ".H068$": "b", "4912345678904": "c",
-             "4901777018686": "Natural_Mineral_Water", "4902705001879": "SAVAS"}
-dict_prices = {"1234ABXDGEAEDA56788": 120, ".H068$": 150,
-               "4912345678904": 100, "4901777018686": 108, "4902705001879": 260}
+
+
+
+
 
 class StartWindow(QtWidgets.QMainWindow):
     def __init__(self,parent=None):
@@ -33,7 +35,8 @@ class StartWindow(QtWidgets.QMainWindow):
             view_1.show()
             self.hide()
         elif e.key() == Qt.Key_Escape:
-            self.close()
+            product_registration.add_main()
+            #self.close()
 
 class View1(QtWidgets.QWidget):
     def __init__(self,parent=None):
@@ -122,6 +125,9 @@ def read_BC(window=None, camera=0):
 
 
 if __name__ == '__main__':
+    #商品の辞書をロードする
+    dict_name = txt2dict('names_prices/BC_names.txt', 'name')
+    dict_prices = txt2dict('names_prices/BC_prices.txt', 'price')
     app = QtWidgets.QApplication(sys.argv)
     start_window = StartWindow()
     view_1 = View1()
