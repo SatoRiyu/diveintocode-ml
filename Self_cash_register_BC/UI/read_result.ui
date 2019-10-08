@@ -13,6 +13,9 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background:rgb(44, 147, 209)</string>
+  </property>
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
@@ -31,8 +34,7 @@
     </font>
    </property>
    <property name="text">
-    <string>Mineral water
-</string>
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffe677;&quot;&gt;Mineral water&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
@@ -56,7 +58,7 @@
     </font>
    </property>
    <property name="text">
-    <string>200RWF</string>
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#fee776;&quot;&gt;200RWF&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
@@ -72,8 +74,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>FInish?
- Press space key</string>
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#265828;&quot;&gt;FInish&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; color:#265828;&quot;&gt;&amp;lt;br&amp;gt;Press space key&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_4">
@@ -86,8 +87,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>continue?
- Press Enter key</string>
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffe677;&quot;&gt;continue&lt;br/&gt;Press Enter key&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
  </widget>
