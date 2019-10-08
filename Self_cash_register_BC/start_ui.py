@@ -16,12 +16,6 @@ from pyzbar.pyzbar import decode
 from PIL import Image
 
 
-# 商品コードと商品名、金額
-
-
-
-
-
 class StartWindow(QtWidgets.QMainWindow):
     def __init__(self,parent=None):
         super(StartWindow, self).__init__(parent)
