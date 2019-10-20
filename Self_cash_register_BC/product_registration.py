@@ -1,10 +1,11 @@
 import numpy as np
 import sys
 import cv2
+import csv
 from pyzbar.pyzbar import decode
 from PIL import Image
 
-from BC_video_copy import read_BC
+from ScreensCommonFuncs import *
 
 def add_main():
 
@@ -20,15 +21,13 @@ def add_main():
             inp = input("これで良ければ'Y'、ダメならば'N'を入力してください。:")
             if inp in ['y','Y','n','N']:break #正しいキーが入力されるまで繰り返す
             print('正しいキーを入力してください')
-        # キー入力を無制限に待って、キーが'q'だったらBreakする
+        # Yが入力されたら確定し終了、Nが入力されたらやり直し
         if inp in ['y','Y']:
             break
         elif inp in ['n','N']:
             continue
-    with open('names_prices/BC_names.txt', mode="a") as f:
-        f.write("{}, {}\n".format(result, name))
-    with open('names_prices/BC_prices.txt', mode="a") as f:
-        f.write("{}, {}\n".format(result, price))
+    with open('names_prices/BC_info.csv', mode="a") as f:
+        f.write("{}, {}, {}\n".format(result, name, price))
 
 if __name__ == "__main__":
     add_main()

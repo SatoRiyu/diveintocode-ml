@@ -1,5 +1,21 @@
 <RCC>
   <qresource prefix="newPrefix">
-    <file>image/teamdragon_System_NAVI/teamdragon_System_NAVI_003.jpeg</file>
+    <file>fukidasi.png</file>
+    <file>cola.png</file>
+    <file>suraimu.png</file>
+    <file>suraimu.png</file>
+    <file>start.png</file>
+    <file>pay_money.png</file>
+    <file>finish.png</file>
+    <file>continue.png</file>
+    <file>exit.png</file>
+    <file>teamdragon_System_NAVI_yoko.004.jpeg</file>
+    <file>teamdragon_System_NAVI_yoko.001.jpeg</file>
+    <file>teamdragon_System_NAVI_yoko.003.jpeg</file>
+    <file>no.png</file>
+    <file>yes.png</file>
+    <file>teamdragon_System_NAVI_yoko.009.jpeg</file>
+    <file>cansel.png</file>
+    <file>teamdragon_System_NAVI_yoko.002.jpeg</file>
   </qresource>
 </RCC>

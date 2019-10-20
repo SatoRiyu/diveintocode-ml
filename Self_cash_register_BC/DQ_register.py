@@ -91,7 +91,7 @@ def register_main():
     sleep(3)
 
 #ここから手続き始まり
-SoundPlayer.play('sound/thema.mp3')
+SoundPlayer.play('sound/thema.mp3',stop=True)
 while True:
     inp=input("会計を始めるなら'S'キー、終了するなら'Q'キーを押してください。:")
     if inp in ['s','S','q','Q']:break #正しいキーが入力されるまで繰り返す
